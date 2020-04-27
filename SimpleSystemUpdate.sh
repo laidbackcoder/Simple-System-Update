@@ -2,9 +2,9 @@
 
 #-------------------------------------------------------------------
 # FILE NAME: SimpleSystemUpdate.sh
-# VERSION:	 2.0.0
-# RELEASED:	 27-APR-2020
-# URL:	     https://github.com/laidbackcoder/Simple-System-Update
+# VERSION:   2.0.0
+# RELEASED:  27-APR-2020
+# URL:       https://github.com/laidbackcoder/Simple-System-Update
 #-------------------------------------------------------------------
 
 clear
@@ -16,7 +16,7 @@ echo " / __\\ \\ / / __|_   _| __|  \\/  | | | | | _ \\   \\ /_\\_   _| __|"
 echo " \\__ \\\\\ V /\\__ \\ | | | _|| |\\/| | | |_| |  _/ |) / _ \\| | | _| "
 echo " |___/ |_| |___/ |_| |___|_|  |_|  \\___/|_| |___/_/ \\_\\_| |___|"
 echo "                                                               " 
-echo "VERSION: 1.0.0 (03-APR-2020)"
+echo "VERSION: 2.0.0 (27-APR-2020)"
 
 
 #----------------------------------
