@@ -2,8 +2,8 @@
 
 #-------------------------------------------------------------------
 # FILE NAME: SimpleSystemUpdate.sh
-# VERSION:	 1.0.0
-# RELEASED:	 03-APR-2020
+# VERSION:	 2.0.0
+# RELEASED:	 27-APR-2020
 # URL:	     https://github.com/laidbackcoder/Simple-System-Update
 #-------------------------------------------------------------------
 
@@ -56,3 +56,16 @@ echo "\e[1;34m"
 echo "\nRemoving Unused Packages..."
 echo "\e[0m"
 sudo apt-get autoremove
+
+
+#----------------------------------
+# 5. Upgrade OS Version
+#
+# NOTE: The current version needs 
+# to be up-to-date before the OS 
+# version can be upgraded.
+#----------------------------------
+echo "\e[1;34m"
+echo "\nUpgrading OS Version..."
+echo "\e[0m"
+sudo do-release-upgrade
