@@ -2,8 +2,8 @@
 
 #-------------------------------------------------------------------
 # FILE NAME: SimpleSystemUpdate.sh
-# VERSION:   2.1.0
-# RELEASED:  30-APR-2020
+# VERSION:   2.2.0
+# RELEASED:  10-DEC-2025
 # URL:       https://github.com/laidbackcoder/Simple-System-Update
 #-------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ echo " / __\\ \\ / / __|_   _| __|  \\/  | | | | | _ \\   \\ /_\\_   _| __|"
 echo " \\__ \\\\\ V /\\__ \\ | | | _|| |\\/| | | |_| |  _/ |) / _ \\| | | _| "
 echo " |___/ |_| |___/ |_| |___|_|  |_|  \\___/|_| |___/_/ \\_\\_| |___|"
 echo "                                                               " 
-echo "VERSION: 2.1.0 (30-APR-2020)"
+echo "VERSION: 2.2.0 (10-DEC-2025)"
 
 
 #----------------------------------
@@ -27,7 +27,7 @@ echo "VERSION: 2.1.0 (30-APR-2020)"
 echo "\e[1;34m"
 echo "\nUpdating Repository Listings..."
 echo "\e[0m"
-sudo apt-get update
+sudo apt update
 
 
 #----------------------------------
@@ -36,7 +36,7 @@ sudo apt-get update
 echo "\e[1;34m"
 echo "\nUpgrading Packages..."
 echo "\e[0m"
-sudo apt-get upgrade -y
+sudo apt upgrade -y
 
 
 #----------------------------------
@@ -45,7 +45,7 @@ sudo apt-get upgrade -y
 echo "\e[1;34m"
 echo "\nUpgrading Distribution..."
 echo "\e[0m"
-sudo apt-get dist-upgrade -y
+sudo apt dist-upgrade -y
 
 
 #----------------------------------
@@ -57,7 +57,7 @@ sudo apt-get dist-upgrade -y
 echo "\e[1;34m"
 echo "\nRemoving Unused Packages..."
 echo "\e[0m"
-sudo apt-get autoremove
+sudo apt autoremove
 
 
 #----------------------------------
@@ -70,7 +70,16 @@ sudo snap refresh
 
 
 #----------------------------------
-# 6. Upgrade OS Version
+# 6. Update Flatpaks
+#----------------------------------
+echo "\e[1;34m"
+echo "\nUpdating Flatpaks..."
+echo "\e[0m"
+sudo flatpak upgrade
+
+
+#----------------------------------
+# 7. Upgrade OS Version
 #
 # NOTE: The current version needs 
 # to be up-to-date before the OS 
